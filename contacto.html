@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Los Períodos Prehistóricos de la Tierra</h1>
+      <p>
+        Un viaje a través del tiempo: desde los orígenes de la humanidad hasta
+        las primeras civilizaciones
+      </p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="paleolitico.html">Paleolítico</a></li>
+        <li><a href="mesolitico.html">Mesolítico</a></li>
+        <li><a href="neolitico.html">Neolítico</a></li>
+        <li><a href="edad-metales.html">Edad de los Metales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          Si tienes preguntas o comentarios sobre los períodos prehistóricos, no
+          dudes en contactarnos:
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto">
+              <option value="pregunta">Pregunta sobre la prehistoria</option>
+              <option value="sugerencia">Sugerencia para el sitio</option>
+              <option value="error">Reportar un error</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <button onclick="sendForm()" type="submit">Enviar mensaje</button>
+            <button type="reset">Limpiar formulario</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-section">
+        <h3>Los Períodos Prehistóricos</h3>
+        <p>
+          Este sitio está dedicado a la difusión del conocimiento sobre la
+          prehistoria humana.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Enlaces de interés</h3>
+        <ul>
+          <li>
+            <a class="link-footer" href="paleolitico.html">Paleolítico</a>
+          </li>
+          <li><a class="link-footer" href="mesolitico.html">Mesolítico</a></li>
+          <li><a class="link-footer" href="neolitico.html">Neolítico</a></li>
+          <li>
+            <a class="link-footer" href="edad-metales.html"
+              >Edad de los Metales</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <address>
+          Email:
+          <a class="link-footer" href="mailto:info@periodosprehistoricos.org"
+            >info@periodosprehistoricos.org</a
+          ><br />
+          Teléfono: +52 55 234 56 78<br />
+          Dirección: Calle Arqueología 1521, 28001 Estado de México, México
+        </address>
+      </div>
+
+      <div class="copyright">
+        <p>
+          &copy; 2025 Los Períodos Prehistóricos. Todos los derechos reservados.
+        </p>
+        <p>Sitio web desarrollado con fines educativos.</p>
+      </div>
+    </footer>
+
+    <script>
+      function sendForm() {
+        alert(
+          "Tu opinion es muy valiosa para mejorar nuestra página. Gracias."
+        );
+      }
+    </script>
+  </body>
+</html>
